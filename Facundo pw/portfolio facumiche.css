@@ -1,0 +1,102 @@
+html{
+    background-color:gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+   
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav .container{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+nav ul li{
+    font-size: 20px;
+    font: weight 450px;;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.logo{
+    border-radius: 1000px;
+    filter: grayscale(100%);
+}
+
+.jumbo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: calc(100vh - 55px);
+}
+
+.jumbo-project{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: calc(100vh - 55px);
+}
+
+.nft{
+    border-radius: 16 px;
+    padding-left: 10px;
+    background-color: white;
+
+}
+
+.nft:hover{
+    transform: 30px;
+    box-shadow: whitesmoke;
+}
+
+.form{
+    background-color: gray;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.jumbo-contact{
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: calc(100vh - 55px);
+} 
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 450px) {
+    .jumbo-contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 450px) {
+    .jumbo{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 450px) {
+    .jumbo-project{
+        grid-template-columns: 1fr;
+    }
+}
